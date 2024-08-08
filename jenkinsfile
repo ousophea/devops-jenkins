@@ -1,7 +1,7 @@
 node {
   def remote = [:]
   remote.name = 'test'
-  remote.host = '192.168.222.236'
+  remote.host = '192.168.222.238'
   remote.user = 'gdi'
   remote.password = 'gdi@12345'
   remote.allowAnyHosts = true
