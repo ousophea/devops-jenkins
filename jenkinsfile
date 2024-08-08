@@ -6,7 +6,7 @@ node {
   remote.password = 'gdi@12345'
   remote.allowAnyHosts = true
   stage('Remote SSH') {
-    sshCommand remote: remote, command: "cd /var/opt/app/gdi-core-deployment"
-    sshCommand remote: remote, command: "git pull"
+    sshCommand remote: remote, command: "cd /var/opt/app/gdi-core-deployment \n 
+                                          git pull \n"
   }
 }
