@@ -6,7 +6,7 @@ node {
   remote.password = 'gdi@12345'
   remote.allowAnyHosts = true
   stage('Remote SSH') {
-    sshCommand remote: remote, command: "cd app/gdi_api_getway/ \n"
-    sshCommand remote: remote, command: "ls"
+    sshCommand remote: remote, command: "cd /app/gdi_api_getway \n"
+    sshCommand remote: remote, command: "docker ps"
   }
 }
