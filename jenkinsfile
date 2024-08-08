@@ -8,6 +8,6 @@ node {
   stage('Remote SSH') {
     sshCommand remote: remote, command: "cd /var/opt/app/gdi-core-deployment \n"
     sshCommand remote: remote, command: "sudo -S <<< \"gdi@12345\" sudo su \n"
-    sshCommand remote: remote, command: "ls \n"
+    sshCommand remote: remote, command: "git pull \n"
   }
 }
